@@ -11,6 +11,9 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge">
 </p>
+<h3 align="center">✨ Feito por <b>Edivone Araújo</b> e <b>Vanessa Taurino</b> ✨</h3>
+<p align="center"><i>“Transformando lógica em diversão!”</i></p>
+
 
 ---
 
@@ -121,7 +124,8 @@ Edivone Araújo e Vanessa Taurino
 Este projeto é licenciado sob a MIT License.
 Sinta-se livre para estudar!
 
-<p align="center"> Feito com ❤️ por <b>Edivone Araújo</b> e <b>Vanessa Taurino</b><br> “Transformando lógica em diversão!” </p> ```
+
+
 
 
 
