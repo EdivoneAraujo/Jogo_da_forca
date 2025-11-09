@@ -1,7 +1,7 @@
 <h1 align="center">🎯 Jogo da Forca - Versão Web</h1>
 
 <p align="center">
-  <img src="banner.png" alt="Banner do Jogo da Forca Web" width="100%">
+  <img src="https://github.com/EdivoneAraujo/Jogo_da_forca/blob/main/Projeto/src/imagens/tela_jogo.png" alt="Banner do Jogo da Forca Web" width="100%">
 </p>
 
 <p align="center">
@@ -105,17 +105,16 @@ Vercel	Hospedagem e deploy
 
 ---
 ## 👨‍💻 Autoras
-Edivone Araújo e Vanessa Taurino
-💬 Desenvolvido para prática de lógica e front-end interativo.
-📧 Contato: [https:/www.linkedin.com/edivone-araujo]
+  Edivone Araújo e Vanessa Taurino
+  💬 Desenvolvido para prática de lógica e front-end interativo.
+  📧 Contato: [https:/www.linkedin.com/edivone-araujo]
 
 <p align="center"> <a href="https://github.com/EdivoneAraujo"> <img src="https://img.shields.io/badge/GitHub-Perfil-black?style=for-the-badge&logo=github"> </a> </p>
 🏁 Licença
 Este projeto é licenciado sob a MIT License.
 Sinta-se livre para estudar!
 
-<p align="center"> Feito com ❤️ por <b>Edivone Araújo</b><b>Vanessa Taurino</b><br> “Transformando lógica em diversão!” </p> ```
-
+<p align="center"> Feito com ❤️ por <b>Edivone Araújo</b><b1>Vanessa Taurino</b1><br> “Transformando lógica em diversão!” </p> ```
 
 
 
