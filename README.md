@@ -28,8 +28,13 @@
 
 O **Jogo da Forca - Python Edition** é uma versão moderna e interativa do clássico jogo da forca
 
-🧠 **Lógica principal:** Desenvolvida em **Python**, contendo funções de sorteio de palavras, verificação de letras e controle de tentativas.  
+🧠 **Lógica principal:** 
+
+Desenvolvida em **Python**, contendo funções de sorteio de palavras, verificação de letras e controle de tentativas.  
+
+
 💻 **Interface Web:** Criada com **HTML, CSS e JavaScript**, apenas para ilustrar visualmente o funcionamento do jogo de forma mais atrativa.
+
 
 ---
 
@@ -42,6 +47,7 @@ O **Jogo da Forca - Python Edition** é uma versão moderna e interativa do clá
 - 🔠 Exibição dinâmica da palavra e letras tentadas  
 - ❤️ Contador de chances  
 - 🔁 Botão de reiniciar jogo  
+
 
 ---
 
@@ -67,6 +73,7 @@ projeto/
 
 └── projeto - jogo da forca.py
 
+
 ---
 ## ⚙️ Como Executar Localmente
 
@@ -81,6 +88,7 @@ projeto/
 
 💡 Não é necessário servidor local — o jogo roda direto no navegador!
 
+
 ---
 ## 🔹 Lógica Python
 
@@ -90,18 +98,24 @@ cd Projeto/src
 Execute o jogo no terminal:
 projeto - Jogo da forca.py
 
+
 ---
 ## 🧠 Como Jogar
 
 1. Escolha um tema e um nível de dificuldade
+
 2. Clique em ▶️ Começar Jogo
+
 3. Digite as letras para adivinhar a palavra
 
 ✅ Correto → letra aparece
+
 ❌ Errado → perde uma chance
 
 Tente descobrir a palavra antes que o boneco seja enforcado!
+
 Clique em 🔁 Jogar novamente para reiniciar
+
 
 ---
 ## 🧰 Tecnologias Utilizadas
@@ -109,10 +123,15 @@ Clique em 🔁 Jogar novamente para reiniciar
 Tecnologia	        Descrição
 
 Python 3	          Lógica principal do jogo
+
 HTML5	              Estrutura da aplicação web
+
 CSS3              	Estilo visual e responsividade
+
 JavaScript (ES6)	  Interatividade e animações
+
 Vercel            	Hospedagem e deploy da versão web
+
 
 ---
 ## 💭 Melhorias Futuras
@@ -125,10 +144,12 @@ Vercel            	Hospedagem e deploy da versão web
 
 📱 Layout 100% responsivo para mobile
 
+
 ---
 ## 👨‍💻 Autoras
 
 Edivone Araújo e Vanessa Taurino
+
 💬 Desenvolvido para prática de lógica em python e front-end interativo.
 
 📧 Contatos:
