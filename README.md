@@ -118,8 +118,11 @@ Vercel            	Hospedagem e deploy da versão web
 ## 💭 Melhorias Futuras
 
 🪄 Animação da forca conforme os erros
+
 🔊 Sons de acerto/erro
+
 🏆 Sistema de pontuação
+
 📱 Layout 100% responsivo para mobile
 
 ---
