@@ -1,7 +1,7 @@
 <h1 align="center">🎯 Jogo da Forca - Python Edition</h1>
 
 <p align="center">
-  <img src="https://github.com/EdivoneAraujo/Jogo_da_forca/blob/main/Projeto/src/imagens/tela_jogo.png" alt="Banner do Jogo da Forca Web" width="100%">
+  <img src="https://github.com/EdivoneAraujo/Jogo_da_forca/blob/main/Projeto/src/interface_grafica/imagens/tela_jogo.png" alt="Banner do Jogo da Forca Web" width="100%">
 </p>
 
 <p align="center">
