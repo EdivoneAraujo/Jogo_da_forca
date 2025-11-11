@@ -1,0 +1,29 @@
+<p align="center" style="font-size: 18px; font-family: 'Segoe UI', sans-serif;">
+Feito com 🔹 Lógica Python por <b style="color:#ff4b4b;">Edivone Araújo</b> e <b style="color:#4b8bff;">Vanessa Taurino</b><br>
+<span class="efeito-texto">“Transformando lógica em diversão!”</span>
+</p>
+
+<style>
+@keyframes digitar {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes cursorPisca {
+50% { border-color: transparent; }
+}
+
+.efeito-texto {
+display: inline-block;
+color: #9e07ac;
+font-weight: bold;
+border-right: 3px solid #9e07ac;
+white-space: nowrap;
+overflow: hidden;
+width: 0;
+animation:
+digitar 3.5s steps(40, end) 0.5s forwards,
+cursorPisca 0.75s step-end infinite;
+text-shadow: 0 0 10px #eabdee, 0 0 20px #eb7bf5, 0 0 30px #de31ee;
+}
+</style>

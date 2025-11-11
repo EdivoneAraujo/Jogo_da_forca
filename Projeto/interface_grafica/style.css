@@ -1,0 +1,664 @@
+/* === ESTILO BASE (DESKTOP) === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url(imagens/fundo_jogo.png) no-repeat 65% center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.container {
+    background: url(imagens/quadro.png) no-repeat center center;
+    background-size: contain;
+    background-color: transparent;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    transform: translate(-30%, -50%);
+    z-index: 10;
+}
+
+/* === CONTEÚDO DENTRO DO QUADRO === */
+.conteudo {
+    width: 100%;
+    height: 98%;
+    padding: 1px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+/* === TEXTOS === */
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 15px;
+    font-size: 48px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 1px 1px 4px #000;
+    margin-bottom: 8px;
+}
+
+/* === CAMPOS E BOTÕES === */
+select, input, button {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ff0099;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #e70f74;
+    color: #f8f806;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #7fa90d;
+    color: #e70f74;
+    transform: scale(1.05);
+}
+
+/* === PALAVRA SECRETA === */
+#palavra {
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000;
+}
+
+/* === DICAS === */
+.dicas {
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-style: italic;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* === CAMPO DE LETRA === */
+#letra {
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #ff0099;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    transition: transform 0.2s;
+}
+
+#letra:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 153, 0.8);
+}
+
+/* === MENSAGEM E STATUS === */
+#mensagem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#usadas {
+    color: #ffd7ff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+#jogo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+/* === RESPONSIVIDADE === */
+
+/* === ESTILO BASE (DESKTOP) === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url(imagens/fundo_jogo.png) no-repeat 65% center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.container {
+    background: url(imagens/quadro.png) no-repeat center center;
+    background-size: contain;
+    background-color: transparent;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    transform: translate(-30%, -50%);
+    z-index: 10;
+}
+
+/* === CONTEÚDO DENTRO DO QUADRO === */
+.conteudo {
+    width: 100%;
+    height: 98%;
+    padding: 1px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+/* === TEXTOS === */
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 15px;
+    font-size: 48px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 1px 1px 4px #000;
+    margin-bottom: 8px;
+}
+
+/* === CAMPOS E BOTÕES === */
+select, input, button {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ff0099;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #e70f74;
+    color: #f8f806;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #7fa90d;
+    color: #e70f74;
+    transform: scale(1.05);
+}
+
+/* === PALAVRA SECRETA === */
+#palavra {
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000;
+}
+
+/* === DICAS === */
+.dicas {
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-style: italic;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* === CAMPO DE LETRA === */
+#letra {
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #ff0099;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    transition: transform 0.2s;
+}
+
+#letra:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 153, 0.8);
+}
+
+/* === MENSAGEM E STATUS === */
+#mensagem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#usadas {
+    color: #ffd7ff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+#jogo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+/* === RESPONSIVIDADE === */
+
+/* === 1️⃣ TABLETS (800px a 1080px) === */
+@media (max-width: 1024px) {
+    body {
+        background-position: 70% center;
+    }
+
+    .container {
+        width: 60%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .conteudo {
+        top: 20%;
+    }
+
+    h1 { font-size: 40px; }
+    h2 { font-size: 24px; }
+    #palavra { font-size: 28px; letter-spacing: 6px; }
+    select, input, button { font-size: 20px; max-width: 250px; }
+}
+
+
+
+/* === 2️⃣ CELULARES (até 799px) === */
+@media (max-width: 790px) {
+    body {
+        background: url(imagens/fundo_do_jogo.jpg) no-repeat 50% center;
+        background-size: 100%;
+    }
+
+    .container {
+        width: 45%;
+        left: 70%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        gap: 1%;
+    }
+
+    .conteudo {
+        width: 70%;
+        top: 28%;
+        padding: 0px;
+        gap: 0px;
+        justify-content:baseline;
+    }
+
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    #palavra { font-size: 22px; letter-spacing: 3px; }
+    select, input, button { font-size: 15px; max-width: 180px; }
+    #letra { width: 90%; font-size: 20px; }
+    .dicas { font-size: 15px; max-height: 90px; }
+}
+
+/* até 600px — começa a reduzir suavemente */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* === 4️⃣ TELAS PEQUENAS (até 400px) === */
+@media (max-width: 400px) {
+    body {
+        background: url(imagens/fundo_do_jogo.jpg) no-repeat 60% center;
+        background-size: cover;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        aspect-ratio: 4 / 3;
+    }
+
+    .conteudo {
+        width: 50%;
+        top: 20%;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    #palavra {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin: 10px 0;
+    }
+
+    select,
+    input,
+    button {
+        font-size: 16px;
+        max-width: 180px;
+        padding: 8px;
+    }
+
+    #letra {
+        width: 95%;
+        font-size: 18px;
+        height: 36px;
+    }
+
+    .dicas {
+        font-size: 14px;
+        max-height: 80px;
+        padding: 8px;
+    }
+
+    #mensagem {
+        font-size: 16px;
+    }
+
+    #usadas {
+        font-size: 18px;
+    }
+}
+
+/* === 5️⃣ TELAS MUITO PEQUENAS (até 300px) === */
+@media (max-width: 300px) {
+    .container {
+        width: 60%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        aspect-ratio: 4 / 3;
+    }
+
+    .conteudo {
+        width: 90%;
+        top: 15%;
+        padding: 5px;
+        gap: 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    select,
+    input,
+    button {
+        font-size: 14px;
+        max-width: 150px;
+        padding: 6px;
+    }
+
+    #palavra {
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin: 8px 0;
+    }
+
+    .dicas {
+        font-size: 12px;
+        padding: 6px;
+        max-height: 70px;
+    }
+}
+
+
+/* === 2️⃣ CELULARES (até 767px) === */
+@media (max-width: 767px) {
+    body {
+        background: url(imagens/fundo_do_jogo.jpg) no-repeat 50% center;
+        background-size: 80%;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .conteudo {
+        width: 80%;
+        top: 22%;
+        padding: 5px;
+    }
+
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    #palavra { font-size: 22px; letter-spacing: 4px; }
+    select, input, button { font-size: 18px; max-width: 200px; }
+    #letra { width: 90%; font-size: 20px; }
+    .dicas { font-size: 15px; max-height: 90px; }
+}
+
+/* até 600px — começa a reduzir suavemente */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* === 4️⃣ TELAS PEQUENAS (até 400px) === */
+@media (max-width: 400px) {
+    body {
+        background: url(imagens/fundo_do_jogo.jpg) no-repeat 60% center;
+        background-size: cover;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        aspect-ratio: 4 / 3;
+    }
+
+    .conteudo {
+        width: 70%;
+        top: 20%;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    #palavra {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin: 10px 0;
+    }
+
+    select,
+    input,
+    button {
+        font-size: 16px;
+        max-width: 180px;
+        padding: 8px;
+    }
+
+    #letra {
+        width: 95%;
+        font-size: 18px;
+        height: 36px;
+    }
+
+    .dicas {
+        font-size: 14px;
+        max-height: 80px;
+        padding: 8px;
+    }
+
+    #mensagem {
+        font-size: 16px;
+    }
+
+    #usadas {
+        font-size: 18px;
+    }
+}
+
+/* === 5️⃣ TELAS MUITO PEQUENAS (até 300px) === */
+@media (max-width: 300px) {
+    .container {
+        width: 60%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        aspect-ratio: 4 / 3;
+    }
+
+    .conteudo {
+        width: 90%;
+        top: 15%;
+        padding: 5px;
+        gap: 6px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    select,
+    input,
+    button {
+        font-size: 14px;
+        max-width: 150px;
+        padding: 6px;
+    }
+
+    #palavra {
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin: 8px 0;
+    }
+
+    .dicas {
+        font-size: 12px;
+        padding: 6px;
+        max-height: 70px;
+    }
+}

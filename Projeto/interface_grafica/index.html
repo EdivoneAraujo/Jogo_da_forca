@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo">
+            <h1>🎯 Jogo da Forca</h1>
+
+            <!-- === MENU INICIAL === -->
+            <div id="menu">
+                <h2>Escolha um tema:</h2>
+                <select id="tema">
+                    <option value="">Selecione</option>
+                    <option value="capitais">🏙️ Capitais</option>
+                    <option value="animais">🐾 Animais</option>
+                    <option value="frutas">🍎 Frutas</option>
+                </select>
+
+                <h2>Escolha o nível:</h2>
+                <select id="nivel">
+                    <option value="">Selecione</option>
+                    <option value="1">😺 Fácil</option>
+                    <option value="2">🦉 Médio</option>
+                    <option value="3">🦁 Difícil</option>
+                </select>
+
+                <div id="dicas" class="dicas">
+                    💡 Escolha um tema e um nível para ver as dicas aqui!
+                </div>
+
+                <button id="iniciar">▶️ Começar Jogo</button>
+            </div>
+
+            <!-- === TELA DE JOGO === -->
+            <div id="jogo" class="hidden">
+                <p id="mensagem"></p>
+                <div id="palavra"></div>
+
+                <p>✏️ Digite uma letra:</p>
+                <input type="text" id="letra" maxlength="1" placeholder="Digite uma letra" autofocus>
+                <button id="tentar">Tentar</button>
+
+                <p>🔠 Letras tentadas: <span id="usadas"></span></p>
+                <p>❤️ Chances restantes: <span id="chances">7</span></p>
+
+                <button id="reiniciar">🔁 Jogar novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
