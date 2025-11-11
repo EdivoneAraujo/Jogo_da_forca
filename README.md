@@ -48,14 +48,23 @@ O **Jogo da Forca - Python Edition** é uma versão moderna e interativa do clá
 ## 🧩 Estrutura do Projeto
 
 projeto/
+
 ├── src/
+
 │ ├── index.html
+
 │ ├── style.css
+
 │ ├── script.js
+
 │ └── imagens/
+
 │ ├── fundo_jogo.png
+
 │ ├── quadro.png
+
 │ └── tela_jogo.png
+
 └── projeto - jogo da forca.py
 
 ---
@@ -66,8 +75,9 @@ projeto/
    git clone https://github.com/EdivoneAraujo/Jogo_da_forca.git
    
 2. Entre na pasta:
-cd Projeto/src
-Abra o arquivo index.html no navegador.
+ cd Projeto/interface_grafica
+
+3. Abra o arquivo index.html no navegador.
 
 💡 Não é necessário servidor local — o jogo roda direto no navegador!
 
@@ -82,6 +92,7 @@ projeto - Jogo da forca.py
 
 ---
 ## 🧠 Como Jogar
+
 1. Escolha um tema e um nível de dificuldade
 2. Clique em ▶️ Começar Jogo
 3. Digite as letras para adivinhar a palavra
@@ -94,7 +105,9 @@ Clique em 🔁 Jogar novamente para reiniciar
 
 ---
 ## 🧰 Tecnologias Utilizadas
-Tecnologia	  Descrição
+
+Tecnologia	        Descrição
+
 Python 3	          Lógica principal do jogo
 HTML5	              Estrutura da aplicação web
 CSS3              	Estilo visual e responsividade
@@ -103,6 +116,7 @@ Vercel            	Hospedagem e deploy da versão web
 
 ---
 ## 💭 Melhorias Futuras
+
 🪄 Animação da forca conforme os erros
 🔊 Sons de acerto/erro
 🏆 Sistema de pontuação
@@ -112,12 +126,11 @@ Vercel            	Hospedagem e deploy da versão web
 ## 👨‍💻 Autoras
 
 Edivone Araújo e Vanessa Taurino
-💬 Desenvolvido para prática de lógica e front-end interativo.
-📧 Contato: https://www.linkedin.com/edivone-araujo
+💬 Desenvolvido para prática de lógica em python e front-end interativo.
 
-<p align="center"> <a href="https://github.com/EdivoneAraujo"> <img src="https://img.shields.io/badge/GitHub-Perfil-black?style=for-the-badge&logo=github"> </a> </p>
+📧 Contatos:
 
-<p align="center"> <a href="https://github.com/EdivoneAraujo"> <img src="https://img.shields.io/badge/GitHub-Perfil-black?style=for-the-badge&logo=github"> </a> </p>
+<p align="center"> <a href="https://www.linkedin.com/in/edivone-araujo"> <img src="https://img.shields.io/badge/LinkedIn-Edivone%20Araújo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"> </a> <a href="https://github.com/EdivoneAraujo"> <img src="https://img.shields.io/badge/GitHub-Edivone%20Araújo-black?style=for-the-badge&logo=github"> </a> </p> <p align="center"> <a href="https://www.linkedin.com/in/edilka-vanessa-menezes-taurino"> <img src="https://img.shields.io/badge/LinkedIn-Vanessa%20Taurino-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"> </a> <a href="https://github.com/nessataurino-design"> <img src="https://img.shields.io/badge/GitHub-Vanessa%20Taurino-black?style=for-the-badge&logo=github"> </a> </p>
 
 ---
 🏁 Licença
