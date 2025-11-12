@@ -6,7 +6,7 @@ const temas = {
             dica: "🏙️ Capitais do Nordeste do Brasil"
         },
         2: { 
-            palavras: ["brasilia", "florianopolis", "curitiba", "belo horizonte"],
+            palavras: ["brasilia", "florianopolis", "curitiba", "belohorizonte"],
             dica: "🌎 Capitais de todos os estados brasileiros"
         },
         3: { 
